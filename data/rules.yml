@@ -1,0 +1,13 @@
+version: "2.0"
+
+rules:
+
+- rule: Say hello when the user starts a conversation with intent greet
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot

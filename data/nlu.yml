@@ -1,0 +1,436 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - okay
+    - alright
+    - that's right
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - Thanks
+    - Thank You
+    - thanks
+    - thanks a lot
+    - thank you so much
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - that is awesome
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - not at all
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - who are you?
+    - who are you
+    - what are you
+    - tell me about yourself?
+    - tell me about yourself
+    - what are you?
+    - what is your name
+- intent: corona_intro
+  examples: |
+    - what is [covid19](corona)?
+    - about corona
+    - corona virus disease 2019
+    - [covid-19](corona) details
+    - [covid-19](corona) meaning
+    - what does [covid19](corona) stand for?
+    - what is corona virus?
+    - what is novel corona virus?
+    - tell me about [covid](corona)
+    - tell me about corona virus
+    - can you tell me about corona
+    - can you tell me about [covid-19](corona)
+    - what does corona virus mean?
+    - tell me something about corona virus
+    - about corona virus pandemic
+    - what does it mean if we have a [pandemic](corona)?
+    - what does it mean if we have an outbreak?
+    - what does outbreak mean?
+    - what is the full name of coronavirus?
+    - what is the full name of covid-19?
+    - what is the full name of the virus?
+    - What is [covid]{"entity": "corona", "value": "corona"}
+    - tell me about [pandemic]{"entity": "corona", "value": "corona"}
+- intent: corona_spread
+  examples: |
+    - how does corona virus spread?
+    - how does this virus spread?
+    - how does corona spread?
+    - corona spread?
+    - covid spread
+    - covid19 spread
+    - prevent spread of corona
+    - droplets spread coronavirus
+    - help prevent spread of virus
+    - infection spread of covid19
+    - minimise spread of virus
+    - spread of coronavirus
+    - spreading of germs
+    - prevent spread of coronavirus
+    - avoid spreading infection
+    - covid19 is spreading
+    - corona happens
+    - How to stop spread of covid
+- intent: corona_food_spread
+  examples: |
+    - how does food spread corona virus?
+    - does consuming junk food spread corona virus?
+    - how will corona spread from food?
+    - corona virus can be spread through food
+    - Does corona spread from food
+    - how will corona spread from food
+- intent: corona_spread_warm
+  examples: |
+    - how will warm weather stop corona virus?
+    - Can warm weather actually stop corona?
+    - will it stop with warm weather?
+    - covid spread cold weather months
+    - will warm weather stop the spread
+    - will it stop with warm weather
+- intent: corona_spread_risk
+  examples: |
+    - who is at higher risk of infection
+    - who is more prone to get corona virus infection
+- intent: corona_community
+  examples: |
+    - what is community spread?
+    - how does community spread occurs?
+    - community spread
+    - spread from person to person
+    - covid transmissibility
+    - animals cannot spread covid19
+    - spread from pet
+- intent: corona_mosq_spread
+  examples: |
+    - can mosquitoes spread corona virus?
+    - can mosquitoes spread covid19?
+    - how does mosquitoes spread corona virus?
+    - mosquitoes spread covid-19 virus.
+    - mosquitoes spread covid virus.
+    - covid from mosquito spread is true or myth
+- intent: corona_prevent
+  examples: |
+    - how can i prevent covid19?
+    - how can i prevent corona virus?
+    - how can i prevent covid-19?
+    - prevent covid19?
+    - prevent corona
+    - how one can prevent from getting infected from covid19?
+    - how one can prevent from getting infected from corona?
+    - precaution for covid 19
+    - precaution for coronavirus
+    - coronavirus precaution
+    - covid-19 precaution
+    - what are precautions for covid-19
+    - how can be safe from coronavirus
+    - coronavirus precaution tips
+    - safety from coronavirus
+    - covid-19 safety
+    - antibiotic effective in preventing?
+    - medicine to prevent Covid19?
+    - home remedy provide comfort
+    - self medication for covid cure
+    - What can I do to prevent catching or spreading the germs?
+    - best way to prevent illness is to avoid being exposed to this virus
+    - face coverings to prevent covid-19
+    - practice everyday preventive actions
+    - How one should prepare to be safe from SARS COV 2
+- intent: corona_symptoms
+  examples: |
+    - What are the symptoms of novel coronavirus?
+    - What are the symptoms of novel corona virus?
+    - What are the symptoms of novel covid-19 virus?
+    - What are the symptoms of corona virus?
+    - symptoms of corona virus?
+    - symptoms of covid19 virus?
+    - symptoms of covid 19
+    - symptoms of coronavirus
+    - coronavirus symptoms
+    - corona symptoms
+    - covid symptoms
+    - covid-19 symptoms
+    - what are symptoms of covid 19
+    - what are symptoms of corona virus
+    - can i still have it but have no symptoms?
+    - can people die from contacting covid-19?
+    - can people die from contracting covid-19?
+    - can people die from coronavirus?
+    - can there be complications from covid-19 symptoms?
+    - can you be infected and not show any symptoms?
+    - can you tell me what the symptoms are?
+    - could i be carrying coronavirus if i don't have symptoms?
+    - does everyone have symptoms?
+    - how can i identify the symptoms of corona?
+    - how can i tell if i have corona virus?
+    - how do i know i have covid-19?
+    - how do i know i might be a carrier?
+    - how do i know if i have a high temperature?
+    - how do i know if i have it?
+    - how do i know if i need hospital treatment?
+    - how severe do my symptoms have to be before i go to hospital?
+    - how would my body feel if i caught the virus?
+    - i have a fever, do i have corona?
+    - what are the signs and symptoms?
+    - what are the signs of corona?
+    - what are the signs of covid-19
+    - what are the signs?
+- intent: corona_vaccine
+  examples: |
+    - Are there any vaccines available for prevention of corona virus?
+    - Are there any vaccines available for prevention of covid19 virus?
+    - what about vaccines available for prevention of corona virus?
+    - vaccines available for prevention of corona virus?
+    - Have the vaccines been developed for corona virus?
+    - is there any vaccine for corona virus?
+    - is there any vaccine for covid19 virus?
+    - are inoculations available?
+    - are they researching vaccines?
+    - are they working on vaccines?
+    - can inoculation protect from coronavirus?
+    - can you be vaccinated to protect from covid-19?
+    - is a vaccine being developed?
+    - is there a cure?
+    - is there a vaccine against coronavirus?
+    - is there a cure for covid-19?
+    - what does herd immunity mean?
+    - what is herd immunity
+    - what is inoculation?
+    - when can we expected a vaccine?
+    - when will inoculations be available?
+    - how long to develop vaccine
+    - vaccine development is time consuming
+    - medical product to prevent covid19
+    - vaccine drug
+    - treatment for covid19
+    - Kill the virus[]{"entity": "corona", "value": "virus"}
+    - kill [covid 19](corona)
+    - Can you kill the [virus](corona)
+    - kill corona
+- intent: corona_infected_person
+  examples: |
+    - If you or someone you know is sick or had contact with someone who has COVID-19
+    - If you or someone you know is sick or had contact with someone who has corona?
+    - what should i do if someone in my house gets infected by corona?
+    - what should i do if someone in my house gets infected by covid-19?
+    - someone gets covid-19 i know?
+    - my family member gets infected by corona?
+    - someone gets infected by corona i know?
+    - someone gets infected by corona i was in contact with?
+    - someone gets infected by covid i was in contact with?
+    - what to do if someone gets infected by covid i was in contact with?
+- intent: corona_social_distancing
+  examples: |
+    - physical distancing
+    - physical contact
+    - social contact through physical distance measures
+    - self isolation
+    - stay home
+    - What is social distancing?
+    - can i walk somewhere?
+    - do i have to avoid going outside?
+    - do i have to avoid people?
+    - travel outside
+    - how do i socially distance
+    - how does social distancing work
+    - stay away from people
+    - avoid crowded public places
+    - guidelines for social distancing
+    - essential travel
+- intent: corona_vulnerable
+  examples: |
+    - are children vulnerable to corona virus?
+    - protect elderly people with [health condition](illness)
+    - prohibit visit to relative house
+    - pregnant woman
+    - [medical](illness) condition
+    - [diabetes](illness) patient vulnerable
+    - need to protect vulnerable population
+    - help vulnerable with precaution
+    - can cats get the virus?
+    - can children get coronavirus?
+    - can dogs get the virus?
+    - can your age affect the severity of the illness?
+    - does respiratory disease increase my risk?
+    - how old are likely to have a severe reaction?
+    - should i be worried about my parents?
+    - what age group is most vulnerable?
+    - what are the high risk groups?
+    - what groups are vulnerable?
+    - what if someone is diabetic?
+    - what people are most likely to experience severe symptoms?
+    - who is most likely to need hospital treatment?
+    - who might need intensive care?
+    - who might need ventilators?
+    - who should avoid contact during the outbreak?
+    - why are older age people more at risk from this illness?
+    - why do some people need intensive care?
+    - why do we need ventilators?
+    - why does age affect the severity?
+    - people working in the supply chain at risk
+    - are cancer patients vulnerable to covid
+- intent: name_entry
+  examples: |
+    - My name is [Rahul](name)
+    - [Rahul](name) is my name
+    - [Rahul](name)
+    - [John](name)
+    - My name is [Bob](name)
+    - my name is [Harsh](name)
+    - name is [Rajesh](name)
+    - my name is [demo](name)
+    - name is [demo](name)
+    - I am [Harsh](name)
+    - I am [Nandan](name)
+    - I am [demo](name)
+    - myself [Harsh](name)
+    - myself [demo](name)
+- intent: out_of_scope
+  examples: |
+    - i am not sure how to handle that
+    - hang on let me find it
+    - who is your favourite robot?
+    - i am hungry
+    - how come?
+    - I changed my mind
+    - am i talking with a bot?
+    - am i speaking to a bot?
+    - am i talking to a bot?
+    - am i talking to a human?
+    - am i talking to a person
+    - am i talking to a real person?
+    - am i talking to a robot?
+    - are you a human?
+    - are you a real person?
+    - are you real?
+    - can i contact a human being?
+    - i don't want to speak with a bot
+    - i don't want to talk
+    - i don't want to talk to a chatbot
+    - i don't want to talk with a chatbot
+    - i'd like to speak to a person
+    - is this a person?
+    - is this a real person or a bot?
+    - who am i talking to?
+    - you real?
+    - who are you ?
+    - I need to know how many people are in your party
+- synonym: Rahul
+  examples: |
+    - rahul
+- synonym: Harsh
+  examples: |
+    - harsh
+- synonym: corona
+  examples: |
+    - coronavirus
+    - sars
+    - COVID19
+    - 2019-nCoV
+    - corona virus
+    - SARS-CoV-2
+    - covid-19
+    - covid
+    - covid19
+    - covid 19
+    - virus
+    - viral
+    - pandemic
+    - epidemic
+    - outbreak
+    - disease
+    - viruses
+    - infection
+- synonym: illness
+  examples: |
+    - asthma
+    - diabetes
+    - asthmatic
+    - diabetic
+    - hypertension
+    - heart
+    - heart disease
+    - cardiovascular
+    - cardiovascular disease
+    - respiratory disease
+    - chronic
+    - cancer
+    - lung
+    - lung disease
+    - high blood pressure
+    - blood pressure
+- regex: name
+  examples: |
+    - [a-zA-Z0-9]{20}

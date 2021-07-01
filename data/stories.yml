@@ -1,0 +1,151 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: corona intro
+  steps:
+  - intent: corona_intro
+  - action: utter_corona_intro
+
+- story: corona spread
+  steps:
+  - intent: corona_spread
+  - action: utter_corona_spread
+  - action: utter_corona_spread_stop
+
+- story: corona food spread
+  steps:
+  - intent: corona_food_spread
+  - action: utter_corona_food_spread
+
+- story: corona warm weather
+  steps:
+  - intent: corona_spread_warm
+  - action: utter_corona_spread_warm
+
+- story: corona risk
+  steps:
+  - intent: corona_spread_risk
+  - action: utter_corona_spread_risk
+
+- story: corona community spread path
+  steps:
+  - intent: corona_community
+  - action: utter_corona_community
+
+- story: corona mosquito path
+  steps:
+  - intent: corona_mosq_spread
+  - action: utter_corona_mosq_spread
+
+- story: corona prevent path
+  steps:
+  - intent: corona_prevent
+  - action: utter_corona_prevent
+
+- story: corona symptoms path
+  steps:
+  - intent: corona_symptoms
+  - action: utter_corona_symptoms
+
+- story: corona vaccine path
+  steps:
+  - intent: corona_vaccine
+  - action: utter_corona_vaccine
+
+- story: corona infected path
+  steps:
+  - intent: corona_infected_person
+  - action: utter_corona_infected_person
+
+- story: corona social distancing
+  steps:
+  - intent: corona_social_distancing
+  - action: utter_faq_distancing
+
+- story: corona vulnerable
+  steps:
+  - intent: corona_vulnerable
+  - action: utter_faq_vulnerable
+
+- story: out of scope
+  steps:
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+  - intent: out_of_scope
+  - action: utter_greet
+
+- story: who am i
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- story: thanks path
+  steps:
+  - intent: goodbye
+  - action: utter_Thanks
+  
+- story: interactive_story_1
+  steps:
+  - intent: corona_intro
+    entities:
+    - corona: corona
+  - action: utter_corona_intro
+  - intent: corona_spread
+  - action: utter_corona_spread
+  - action: utter_corona_spread_stop
+  - intent: corona_intro
+    entities:
+    - corona: corona
+  - action: utter_corona_intro
+  - intent: corona_prevent
+  - action: utter_corona_prevent
+  - intent: corona_vaccine
+    entities:
+    - corona: virus
+  - action: utter_corona_vaccine
+  - intent: corona_mosq_spread
+  - action: utter_corona_mosq_spread
+  - intent: corona_vaccine
+    entities:
+    - corona: covid 19
+  - action: utter_corona_vaccine
+  - intent: corona_vulnerable
+  - action: utter_faq_vulnerable
+  - intent: corona_vaccine
+    entities:
+    - corona: virus
+  - action: utter_corona_vaccine
+  - intent: corona_vaccine
+  - action: utter_corona_vaccine
+  - intent: out_of_scope
+  - action: utter_out_of_scope

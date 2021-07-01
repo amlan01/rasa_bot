@@ -1,0 +1,110 @@
+version: '2.0'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- corona_spread
+- corona_prevent
+- corona_vulnerable
+- corona_intro
+- corona_vaccine
+- out_of_scope
+- corona_mosq_spread
+- greet
+- goodbye
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- bot_challenge
+- corona_food_spread
+- corona_spread_warm
+- corona_spread_risk
+- corona_community
+- corona_symptoms
+- corona_infected_person
+- corona_social_distancing
+- name_entry
+entities:
+- corona
+- illness
+- name
+responses:
+  utter_greet:
+  - text: Hello! How can i help you today?
+  utter_cheer_up:
+  - text: Cheer up, Awesome days incoming
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_corona_intro:
+  - text: The COVID-19 pandemic, also known as the coronavirus pandemic, is an ongoing pandemic of coronavirus disease 2019 (COVID-19) caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2). The disease was first identified in December 2019 in Wuhan, China. The World Health Organization declared the outbreak a Public Health Emergency of International Concern on 30 January 2020 and a pandemic on 11 March 2020. As of 16 May 2021, more than 2.44 crore cases have been reported in India, resulting in more than 2.66 lakhs deaths; more than 2.04 crore people have recovered.
+  utter_corona_spread:
+  - text: The virus that causes COVID-19 is spreading from person-to-person. People are thought to be most contagious when they are symptomatic (the sickest). That is why CDC recommends that these patients be isolated either in the hospital or at home (depending on how sick they are) until they are better and no longer pose a risk of infecting others. More recently the virus has also been detected in asymptomatic persons. How long someone is actively sick can vary so the decision on when to release someone from isolation is made using a test-based or non-test-based strategy (i.e. time since illness started and time since recovery) in consultation with state and local public health officials. The decision involves considering the specifics of each situation, including disease severity, illness signs and symptoms, and the results of laboratory testing for that patient.
+  utter_corona_spread_stop:
+  - text: 'Self-isolate by staying at home if you begin to feel unwell, even with mild symptoms such as headache, low grade fever (37.3 C or above) and slight runny nose, until you recover.You can reduce your chances of being infected or spreading COVID19 by taking some simple precautions: • Regularly and thoroughly clean your hands with an alcohol based hand rub or wash them with soap and water. Why? Washing your hands with soap and water or using alcohol-based hand rub kills viruses that may be on your hands. • Maintain at least 1 metre (6 feet) distance between yourself and anyone who is coughing or sneezing. Why? When someone coughs or sneezes they spray small liquid droplets from their nose or mouth which may contain virus. If you are too close, you can breathe in the droplets, including the COVID-19 virus if the person coughing has the disease. • Avoid touching eyes, nose and mouth. Why? Hands touch many surfaces and can pick up viruses. Once contaminated, hands can transfer the virus to your eyes, nose or mouth. From there, the virus can enter your body and can make you sick. • Make sure you, and the people around you, follow good respiratory hygiene. This means covering your mouth and nose with your bent elbow or tissue when you cough or sneeze. Then dispose of the used tissue immediately. Why? Droplets spread virus. By following good respiratory hygiene you protect the people around you from viruses such as cold, flu and COVID-19. • Stay home if you feel unwell. If you have a fever, cough and difficulty breathing, seek medical attention and call in advance. Follow the directions of your local health authority. Why? National and local authorities will have the most up to date information on the situation in your area. Calling in advance will allow your health care provider to quickly direct you to the right health facility. This will also protect you and help prevent spread of viruses and other infections. • Keep up to date on the latest COVID-19 hotspots (cities or local areas where COVID-19 is spreading widely). If possible, avoid traveling to places – especially if you are an older person or have diabetes, heart or lung disease. Why? You have a higher chance of catching COVID-19 in one of these areas.'
+  utter_corona_food_spread:
+  - text: It is highly unlikely that people can contract COVID-19 from food or food packaging. COVID-19 is a respiratory illness and the primary transmission route is through person to person contact and through direct contact with respiratory droplets generated when an infected person coughs or sneezes.
+  utter_corona_spread_warm:
+  - text: It is not yet known whether weather and temperature affect the spread of COVID-19. Some other viruses, like those that cause the common cold and flu, spread more during cold weather months but that does not mean it is impossible to become sick with these viruses during other months.  There is much more to learn about the transmissibility, severity, and other features associated with COVID-19 and investigations are ongoing.
+  utter_corona_spread_risk:
+  - text: The virus that causes COVID-19 is spreading from person-to-person. People are thought to be most contagious when they are symptomatic (the sickest). That is why CDC recommends that these patients be isolated either in the hospital or at home (depending on how sick they are) until they are better and no longer pose a risk of infecting others. Over the past 30 years, the number of annual epidemics has nearly tripled. In the past 15 years alone, outbreaks of Zika, MERS-CoV, SARS, cholera, tuberculosis, HIV/AIDS, influenza and Ebola have killed hundreds of thousands of people. We know why this is happening. We live in a world where humans are increasingly connected — not only to each other but also to animals, which are responsible for about three-quarters of new infectious diseases. What’s more, human beings are moving around the planet faster than at any other time in history, giving pathogens endless opportunities to find new hosts, cross borders and evolve into stronger strains than we’ve seen in the past. Climate change is also fuelling the spread of disease, as warmer temperatures disrupt our ecological balance and expand the habitats of mosquitoes and other disease-carrying species. Meanwhile, antimicrobial resistance is undermining some of the gains we have made in controlling outbreaks, as infections become more difficult — and even impossible — to kill.
+  utter_corona_community:
+  - text: COVID-19 seems to be spreading easily and sustainably in the community (“community spread”) in many affected geographic areas. Community spread means people have been infected with the virus in an area, including some who are not sure how or where they became infected.
+  utter_corona_mosq_spread:
+  - text: At this time, CDC has no data to suggest that this new coronavirus or other similar coronaviruses are spread by mosquitoes or ticks. The main way that COVID-19 spreads is from person to person. See How Coronavirus Spreads for more information.
+  utter_corona_prevent:
+  - text: |-
+      The best way to prevent illness is to avoid being exposed to the virus. CDC recommends everyday preventive actions to help prevent the spread of respiratory diseases.CDC recommends washing your hands often with soap and water for at least 20 seconds especially after you have been in a public place, or after blowing your nose, coughing, or sneezing. If soap and water are not available, CDC recommends using an alcohol-based hand sanitizer that contains at least 60 percent alcohol.
+      Wear masks in public settings when around people not living in your household and particularly where other social distancing measures are difficult to maintain, such as grocery stores, pharmacies, and gas stations. Masks may slow the spread of the virus and help people who may have the virus and do not know it from transmitting it to others.COVID-19 can be spread by people who do not have symptoms and do not know that they are infected. That’s why it’s important for everyone to practice social distancing (staying at least 6 feet away from other people) and wear masks in public settings. Masks provide an extra layer to help prevent the respiratory droplets from traveling in the air and onto other people.The masks recommended are not surgical masks or N-95 respirators. Those are critical supplies that must continue to be reserved for healthcare workers and other medical first responders, as recommended by current CDC guidance.
+  utter_corona_symptoms:
+  - text: |-
+      COVID-19 symptoms include:
+      Cough
+      Fever or chills
+      Shortness of breath or 
+      difficulty breathing
+      Muscle or body aches
+      Sore throat
+      New loss of taste or smell
+      Diarrhea
+      Headache
+      New fatigue
+      Nausea or vomiting
+      Congestion or runny noseIn confirmed cases of illness in humans, common symptoms have been acute, serious respiratory illness with fever, cough, shortness of breath, and breathing difficulties. Based on current clinical experience, the infection generally presents as pneumonia. It has caused kidney failure and death in some cases. It is important to note that the current understanding of the illness caused by this infection is based on a limited number of cases and may change as more information becomes available.
+  utter_corona_vaccine:
+  - text: The development of vaccines take time. Several pharmaceutical companies and research laboratories are working on vaccine candidates. It will, however, take months or years before any vaccine can be widely used, as it needs to undergo extensive testing in clinical trials to determine its safety and efficacy.  These clinical trials are an essential precursor to regulatory approval and usually take place in three phases. The first, involving a few dozen healthy volunteers, tests the vaccine for safety, monitoring for adverse effects. The second, involving several hundred people, usually in a part of the world badly affected by the disease, looks at how effective the vaccine is in the field, and the third does the same in several thousand people.
+  utter_corona_infected_person:
+  - text: |-
+      Stay home for 14 days after your last contact with a person who has COVID-19.
+      Be alert for symptoms. Watch for fever, cough, shortness of breath, or other symptoms of COVID-19.
+      If possible, stay away from others, especially people who are at higher risk for getting very sick from COVID-19.
+  utter_faq_distancing:
+  - text: Social distancing, also called physical distancing, means keeping space between yourself and other people outside of your home. To practice social or physical distancing Stay at least 6 feet (2 meters) from other people Do not gather in groups Stay out of crowded places and avoid mass gatherings. It is a set of non-pharmaceutical interventions or measures taken to prevent the spread of a contagious disease by maintaining a physical distance between people and reducing the number of times people come into close contact with each other. The new coronavirus is a respiratory virus which spreads primarily through droplets generated when an infected person coughs or sneezes, or through droplets of saliva or discharge from the nose. To protect yourself, clean your hands frequently with an alcohol-based hand rub or wash them with soap and water.
+  utter_faq_vulnerable:
+  - text: People of all ages can be infected by the new coronavirus (2019-nCoV). Older people, and people with pre-existing medical conditions (such as asthma, diabetes, heart disease) appear to be more vulnerable to becoming severely ill with the virus.
+  utter_out_of_scope:
+  - text: Sorry I don't know the answer, can you please ask questions related to COVID-19?
+  utter_Thanks:
+  - text: You are welcome!
+
+actions:
+- utter_corona_intro
+- utter_corona_mosq_spread
+- utter_corona_prevent
+- utter_corona_spread
+- utter_corona_spread_stop
+- utter_corona_vaccine
+- utter_faq_vulnerable
+- utter_out_of_scope
+- utter_corona_spread_warm
+- utter_corona_spread_risk
+- utter_corona_community
+- utter_corona_symptoms
+- utter_corona_infected_person
+- utter_faq_distancing
